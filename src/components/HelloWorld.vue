@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h1>How I Built This Page</h1>
-    <h2>Installation</h2>
+    <h1>{{ msg }}</h1>
+    <h2>How I Built This Page</h2>
     <p>
       To install Vue CLI, I ran the command
       <code>npm install -g @vue/cli</code>. Then, I created a new project using
@@ -27,6 +27,9 @@
 <script>
 export default {
   name: "HelloWorld",
+  props: {
+    msg: String,
+  },
 };
 </script>
 
